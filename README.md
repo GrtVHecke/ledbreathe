@@ -9,8 +9,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 User control breathe behaviour for the RGB led on Particle devices.
 
 # usage
+```
 LedBreathe _led( 100, 10, 128, true, 0, 255, 255 ); /// Let the RGB led breathe with the color Cyan as start color and a maximum brightness of 50%
+```
 
+
+```
 /**
  * Constructor
  *
@@ -23,24 +27,30 @@ LedBreathe _led( 100, 10, 128, true, 0, 255, 255 ); /// Let the RGB led breathe 
  * @param [in] initB         The initial Blue part of the color for the auto start
  */
 LedBreathe::LedBreathe( unsigned int interval, int fadeAmount, byte maxBrightness, bool autoStart, byte initR, byte initG, byte initB )
+```
 
 
+```
 /**
  * Starts simulating the "breathe" behaviour of the RGB led
  *
  * @return void
  */
 void LedBreathe::start( void )
+```
 
 
+```
 /**
  * Stops simulating the "breathe" behaviour of the RGB led
  *
  * @return void
  */
 void LedBreathe::stop( void )
+```
 
 
+```
 /**
  * Sets the color of the RGB led
  *
@@ -51,6 +61,7 @@ void LedBreathe::stop( void )
  * @return void
  */
 void LedBreathe::setColor( byte colorR, byte colorG, byte colorB )
+```
 
 
 # example program
